@@ -122,13 +122,21 @@ For all exercises today, you can use the `sync` network type - but most algorith
 # Exercise 5
 1. Identify two problems with IP-multicast
    1. What is a practical problem for IP-multicast? 
+      1. Han ved ikke om der er nogen der har fået det hele
    2. What is a theoretical problem for IP-multicast?
+      1. ordering
    
 2. Identify all the events in the following picture
    1. Compute the lamport clocks for each event
+      1. P1 = [2,3,4,8]
+      2. P2 = [1,2,5,6,7]
+      3. P3 = [4,5,6]
    2. Compute the vector clock for each event
+      1. P1 = [[0,0,0],[1,1,0],[2,1,0],[3,1,0],[4,5,2]]
+      2. P2 = [[0,0,0],[0,1,0],[0,2,0],[3,3,0],[3,4,2],[3,5,2]]
+      3. P3 = [[0,0,0],[2,1,1],[2,1,2],[2,2,3]]
    3. What is the difference in the orderings produced by vector and lamport clocks?
-
+      1. vector clock har lokale counter, lampert clock har global
 ![A message sequence chart of three processes, without vector-clock annotations](figures/vector_clock_exercise.png)
 
 

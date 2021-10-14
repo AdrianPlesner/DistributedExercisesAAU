@@ -217,6 +217,7 @@ class Order:
     def __str__(self):
         return f'Order(<{self.message_id()}> = {self.order()})'
 
+
 class TOSEQMulticast(MulticastListener, MulticastService, Device):
 
     def __init__(self, index: int, number_of_devices: int, medium: Medium, application: MulticastListener = None):
